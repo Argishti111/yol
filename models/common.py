@@ -15,7 +15,8 @@ import requests
 import torch
 import torch.nn as nn
 from PIL import Image
-from torch.cuda import amp
+# from torch.cuda import amp
+from apex import amp
 
 from utils.datasets import exif_transpose, letterbox
 from utils.general import colorstr, increment_path, make_divisible, non_max_suppression, scale_coords, xyxy2xywh
